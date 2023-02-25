@@ -1,0 +1,45 @@
+body{
+  margin: 0px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+h1{
+  border-bottom: 1px solid gray;
+  padding: 20px;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-size: 45px;
+}
+h2{
+  text-align: center;
+  padding: 20px;
+}
+h3{
+  text-align: center;
+}
+#grid ol{
+  border-right: 1px solid gray;
+  width: 130px;
+  margin: 0px;
+  padding: 20px;
+  padding-left: 30px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+@media(max-width: 800px){
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right: none;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
